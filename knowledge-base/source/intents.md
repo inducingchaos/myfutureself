@@ -1,0 +1,117 @@
+# My Future Self - User Intents Changelog
+
+## [Initial] - 2025-04-14, 2:00 PM
+
+-   I want to build an app to help users get clarity (around their path)
+-   I often spend hours, multiple days of the week going for walks and sitting with my own thoughts to do this
+-   Most of the thinking issues we face were already questioned and concluded by ourselves in the past, we just forget
+-   Sometimes we contradict the past but most times we just re-realize what we already know
+-   This kind of overthinking can lead to confusion, redirection, and failure or delays
+-   I think of the brain like a computer - where our memories are stored in the hard drive, and the subconscious being RAM
+-   Our biggest downfall as humans is forgetting, not having all of the data we need to decide & compare in our subconscious and on the front of our mind at all times - this is now solvable with AI via RAG strategies and large context windows
+-   I like to call this issue “a lack of memory permanence”
+-   Part of our goal beyond momentary clarity is to permanently program a user’s desired knowledge into their subconscious
+-   Think of this kind of like a digital brain - if ChatGPT and a productivity app had a baby
+-   It will be heavily-reliant on its finely-orchestrated data structures and manipulation methods, with an interface that is effortless and intuitive for the user
+-   Making the UX linear is key to successful users and a successful app - querying via chat or voice is the best way to interact with such a system that is complex by nature - we then perform actions on their behalf
+-   The internals will likely rely on a complex chain of AI agents and tooling
+-   Accurately extracting, remembering, and recollecting concepts from the user’s messages is very important
+-   Our goal with the UX/UI is to optimize for thought-to-action efficiency, our app needs to be good enough that users actually want to use it, and can do so quickly
+-   Most of the functionality & features will be available via tool calls through the AI chat - this simplifies the learning curve
+-   The AI will help break down thoughts, prioritize/weight them (for importance, urgency, etc) by reasoning with the user
+-   Our app also helps the user achieve consistency by utilizing push notifications for algorithmic check-ins, as well as intentional, scheduled reminders
+-   Our app is not just another AI chat client - it is purpose-built for progressing in life, achieving your goals, and facilitating action
+-   I think this ties into clarity… but the MFS helps provide certainty, confidence, and hierarchy to one’s thoughts that can be helpful in multiple domains - sticking to a business idea for a set of reasons, revisiting the strongest points of your identity during moments of disassociation, re-affirming decisions you are making in a relationship, and channeling your focus into the parts of life that are actually the most important to you
+-   MFS will conveniently function well as a to-do list - not only in the way it can schedule CRONs for APNS but also break down tasks into sub-tasks, and the inverse
+-   The same can be done with thoughts - expanding them, condensing, and generating new
+-   Our agents will need to be programmed with extreme discernment, that of a level greater than the average user
+-   Overlapping, conflicting, or thoughts that are very similar in nature will need to be detected, interpreted, manipulated, and integrated accordingly - this might mean appending, splitting, rephrasing, or removing thoughts in favour of another, or adjusting parameters such is significance, urgency, certainty, domain relevance, etc
+-   Under the hood, this will require an indexing system that allows for accessible retrieval, associations to database values, and abstract strategies such as automatic tag generation and complex relations
+-   In addition to the main chat view, we will have another data view for reviewing relevant, structured information - meant for consumption
+-   This might mean a list of suggested thoughts, or many amalgamated into readable text (almost like a social feed), with options for different timelines - now, daily, weekly, etc
+-   I thought about adding a tab for search, but realistically anything searched for could be better utilized by AI in the chat
+-   Actions performed by the AI should be able to be undone, re-done, etc - when working with someone’s life knowledge, an edit-history concept on all potentially-destructive features is a must
+-   We need to get super clear on the value proposition through more ideas, reasoning, and reduction
+-   You need to help me come up with different data/thought transformation strategies that we can design agents around
+-   The problem and demographic we’re solving for is multi-dimensional
+-   Our app can help make decisions, answer questions, break things down, summarize them - and more
+-   We are in the art of keeping, manipulating, and implementing thought
+-   We’re solving for one of the biggest issues of the human condition — clear thought, because good thinking is a prerequisite for intentional action
+-   Depression? You’re probably unclear on the next step, or forgot about that mental tactic for avoiding it in the past - and that has led to a loss of hope, producing such feelings
+-   Shiny object syndrome? You already unwrapped this issue last week, listed out the pros & cons of each biz idea, derived N reasons why X is not suitable for now and why Y is the best solution
+-   Content ideas? Yeah, you came up with that framework last week, and a few ideas that you could start with… but you forgot
+-   Best marketing direction? You’ve thought of X, Y, and Z - here are the details you described for each
+-   Having an identity crisis on a poor day? You have done A, B, and C, you have these goals to achieve, this was your motivation and reason for starting and this was the most valuable trait that when remembered, gave you a ton of confidence
+-   The app will be called My Future Self (shortened as MFS) - the name originating from a self-development perspective where one examines what the successful, future version of themselves would do
+-   I have the domain myfutureself.app, but also bought yourfutureself.app while trying to disambiguate the two… but I believe MFS is more contextually-sound and personal for the user - so we will just redirect from the latter for now
+-   It will be iOS-first using the bleeding-edge versions of Expo, with API routes, a simple site, and external payment + account creation (to avoid Apple’s fees) using Next.js 15, and a Raycast Extension for quick internal prototyping & testing — all managed monolithically using Turborepo, deployed on Vercel
+-   Our app icon should be related to knowledge, reprogramming the subconscious, maybe a greek philosopher, something indicative to space/time or the future, the merging of human and computer - integrating a spiritual aspect with a feeling of lightness and that of God
+-   Much of our app will use Hoefler Text
+-   We will have a Lock Screen widget for displaying relevant thoughts or statistical data for retaining users even when not using the app, and a Lock Screen control (where the flashlight/camera buttons are) to quickly open the app to a chat or voice input
+-   We are going to use Upstash KV as a database for as long as possible, because we will really only know the true table shapes deep into development & at a small scale, it is much easier and faster - when necessary, we will use Drizzle & Planetscale MySQL
+-   We will start with Clerk for auth to keep things simple
+-   PNPM for a package manager
+-   T3 Env to initially manage environment variables
+-   shadcn/ui for our component library, which uses TailwindCSS
+-   We’ll use PostHog for product analytics & AI observability
+-   Zod 4 for runtime validation
+-   Sort all of these app thoughts into the respective locations I mentioned - hit every single point and detail within it
+-   We should store timestamped dev messages (me, & this) as an original copy of the idea in another directory
+-   In addition to theses original, unmodified messages, you will place all thoughts I give you into their respective place within the structure we design by default - as well as your own suggestions once confirmed
+-   I will start structuring the project by providing this message to AI, and it (you) will categorize, architect, and help resolve the most pressing questions and foundational decisions
+-   We will have a function to amalgamate all of the files & directories into one long `llms.txt` file that will be updated and accessible to you in your system instructions with every run
+-   If you are part of Raycast AI and not Cursor, you will update the files by providing only the new text with a cursor-based indication of where to place the text, within the specified file
+-   Make sure to append EVERY significant fact, opinion, or mention by me that’s applicable to the project in a condensed and concise way - without losing meaning
+-   Let’s avoid deleting any previous thoughts, ideas, steps, or info - instead simply rearranging when necessary, or making with a label such as [OUTDATED], [ARCHIVED], or similar
+-   If you think it will help the AI, or be useful for indexing or referencing within labels and elsewhere, we could even index each point kind of like the Bible or the law (e.g., 5.1, a, 3., or a custom combination of your choice)
+-   We need to clarify how we will initialize the project and where the text files will reside within the monorepo
+-   Our very first goal is to structure the structure, and configure the tools to build the foundation
+-   Before building at all - we will also need to go through all of my cursor settings and fine-tune our rules to best suit this project
+-   Once we do that, we should initialize Turborepo, Expo, Next, and a Raycast Extension within Cursor, testing each build to ensure that it works - we will keep each app/package slim and only add dependencies as needed
+-   We should define instructions for each AI agent that has access to these notes as well
+-   If you are Raycast AI, you are to help with the thinking part of things, kind of like a project coordinator - do not provide code or commands unless explicitly asked
+-   If you are an AI in Cursor, you are to help with building the project and take instructions from Raycast AI and the user
+-   We should additionally optimize code-specific Cursor rules, such as my preferences for deleting comments or using `finally` in a try/catch block - updating the main rules, and possibly creating a project-scoped Cursor rules file if needed
+-   Always wait or ask for necessary information before making assumptions or potentially overstepping on existing information (e.g., I will give you my current Cursor rules before we refine them)
+-   Once we have a structure, instructions, and a process for working with AI, we will then build out the initial structure, then plan the macro for the app, then the micro for the next step, then build, and repeat
+-   The very first step is this - I am dumping my thoughts to you, and you will help organize them respecting what I described
+-   You, just like the app itself, will help me hyper-condense my overall thoughts into razor-sharp points when needed (e.g., deriving a value proposition for our app, a tagline, a short description, etc)
+-   Sometimes we will do the inverse - I will specify a specific feature, and you need to help me widen scope (e.g., taking our ideas for a “data feed” or “AI tool calls”, helping create clear distinctions for the user by creating purposeful groups, and even further deciding on a set of tab bar names and icons that encapsulate what each tab contains… that is, in the case that we use a tab bar)
+-   Our notes/prompts structure (which will exist with the project) will have sections and/or files relating to action steps, completed, meta/index (for top-level info, pointing to self-instructions, etc), features, anti-vision, marketing info, previous messages (this), actual prompts for our app agents in a segregated folder, the entire launch plan from nothing to $2K MRR (to start), the data architecture (how thoughts are stored, manipulated, related), UX flows, UI prefs, styles & structures, unanswered questions, problems to be solved, an internal development roadmap that segments releases, some public-facing marketing material (anything non-beneficial to AI or near-duplicating internal info should be segregated to avoid conflicts/staleness), etc
+-   These sections are just suggested but should be included even if changed slightly - also come up with more as you see fit when structuring the project
+-   One of our info files about marketing should include the tagline (or possible taglines, until the project becomes more clear), meta titles and descriptions, social handles, etc
+-   We need to figure out the best way to reference docs in Cursor, there’s been multiple instances where I’ve added a `llms.txt` file to the built-in docs feature and had it fail to reference - an approach where we point to all the relevant doc links from a single file may work better
+-   Our first features will be the chat with basic single-thread message storage, then auth, then a tool for scheduling CRON push-notification reminders and a way to view/manage them
+-   In the dev content (which will be BTS, build-in-public, daily content of the process, collab-posted between my personal brand account and the MFS account) - we should always start by stating the current part (instead of measuring in days, we will just do part N/100), the date, etc - this should help with retention and engagement (feel free to expand on what we can add here)
+-   You need to help plan out the videos for each “part” - working backwards from our current main milestone, down to the tasks and their details, and how we might fit these into each film segment of the video
+-   Each part will be a major checkpoint that spans about a day’s worth of work
+-   I want to give a vibe of explaining and filming the decisions we make throughout the build process (e.g., we’re deploying API routes with Next because it integrates well with Vercel, and leaves the door open for a fully-featured site when the time comes)
+-   Most of the b-roll will be time-lapses of me working, some talking-head shots, and some handheld videos showing the computer screen - with a voiceover and some subtle background music
+-   This could be part of the marketing story maybe, but previously I was working on an app called ALTERED, which is a way to store, develop, and use your thoughts on the fastest thought-to-action platform available
+-   This is still a $1B idea, but it’s like building the engine of a SpaceX rocket - we’re building a database-like layer for managing brain data, which in practice is super useful but initially, it’s very hard to build & market (kind of like selling a Google Sheets clone)
+-   MFS is meant to be the shell of what will later be ALTERED, being specifically-built for a narrow problem and audience
+-   Instead of the typical “what can I help you with” response, I think we should lead with “what do you want to do?” or “what are you thinking about?”
+-   I need your help to structure, template, format, and construct system prompts in a way that follows performant conventions and is optimized for the desired result
+
+## [File Tree Refinements] - 2025-04-14, 2:04 PM
+
+-   Renamed `docs` to avoid implying public documentation
+-   Named apps by purpose rather than technology
+-   Added tooling directory
+-   Renamed `original` to `source`
+-   Replaced vision/anti-vision with specs file
+-   Moved prompts to packages directory
+-   Reorganized roadmap structure
+-   Added script location for llms.txt compilation
+-   Consolidated marketing content strategy
+-   Added .cursor/rules for project-specific AI instructions
+-   Aligned with Midday AI architecture as reference
+-   Changed ⁠features/core-features.md to ⁠features/index.md
+-   Combined taglines and descriptions into a single ⁠details.md file
+-   Renamed script to ⁠llms-txt.ts and made it TypeScript
+-   Renamed ⁠action-steps.md to ⁠todos.md
+-   Renamed ⁠plan.md to ⁠macro.md
+-   Added ⁠launch.md under marketing for the financial success plan
+-   Renamed ⁠content-strategy.md to ⁠content.md
+-   Simplified content structure with numbered files (001.md, 002.md, etc.) and an index file
+-   Removed unnecessary content subfolder
