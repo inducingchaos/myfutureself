@@ -47,8 +47,8 @@ This file serves as the main navigation for the MFS project knowledge base.
 
 ### content/
 
--   **index.md**: Index of all content parts
--   **001.md**, **002.md**, etc.: Individual content parts for build-in-public
+-   **index.md**: Index of all content parts for socials
+-   **001.md**, **002.md**, etc.: Individual parts for build-in-public content
 
 ### source/
 
