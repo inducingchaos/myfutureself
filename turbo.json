@@ -18,6 +18,20 @@
         },
         "test": {
             "dependsOn": ["^test"]
-        }
+        },
+        "start": {
+            "persistent": true,
+            "cache": false
+        },
+        "android": {
+            "cache": false
+        },
+        "ios": {
+            "cache": false
+        },
+        "web": {
+            "cache": false
+        },
+        "reset-project": {}
     }
 }
