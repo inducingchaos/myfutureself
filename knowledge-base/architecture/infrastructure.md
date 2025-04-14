@@ -35,6 +35,12 @@ Turborepo is configured with these primary tasks:
 
 All tasks leverage Turborepo's caching and intelligent pipeline execution.
 
+Turborepo is configured to use the interactive Terminal UI ("tui") mode, which enables:
+
+- Toggling through individual task runs
+- Interacting with running tasks
+- Better visibility of task logs in parallel execution
+
 ### Technologies
 
 #### Web (Next.js)
@@ -66,7 +72,7 @@ All tasks leverage Turborepo's caching and intelligent pipeline execution.
 
 ### Configuration Files
 
-- `turbo.json` - Defines task pipelines and dependencies
+- `turbo.json` - Defines task pipelines, dependencies, and UI preferences (using "tui" mode)
 - `pnpm-workspace.yaml` - Defines workspace packages
 - `package.json` - Root package configuration
 - App-specific configuration in respective directories
